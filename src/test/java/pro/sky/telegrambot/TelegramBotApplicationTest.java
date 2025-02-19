@@ -9,7 +9,6 @@ import org.springframework.boot.test.mock.mockito.MockBean;
 import pro.sky.telegrambot.listener.TelegramApiException;
 import pro.sky.telegrambot.listener.TelegramBotUpdatesListener;
 import pro.sky.telegrambot.repository.NotificationRepository;
-
 import java.util.Collections;
 import static org.mockito.Mockito.*;
 import static pro.sky.telegrambot.TestConstants.*;

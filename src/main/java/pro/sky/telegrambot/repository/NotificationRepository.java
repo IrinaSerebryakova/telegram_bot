@@ -13,5 +13,4 @@ import java.util.List;
 public interface NotificationRepository extends JpaRepository<Notification, Long> {
     @Query(value = "SELECT * FROM notification_task WHERE datetime = :datetime", nativeQuery = true)
     List<Notification> findNotificationByDateAndTime(@Param("datetime") LocalDateTime datetime);
-
 }

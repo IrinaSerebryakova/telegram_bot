@@ -202,6 +202,7 @@ public class TelegramBotUpdatesListener implements UpdatesListener {
         String text = "Спасибо, что ты был(а) со мной, " + userName + "! До скорых встреч!";
         sendMessage(chatId, text);
     }
+
 }
 
 

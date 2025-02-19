@@ -36,4 +36,5 @@ public class TelegramBotApplication {
 			logger.error("Ошибка при отправке уведомлений", e);
 		}
 	}
+
 }

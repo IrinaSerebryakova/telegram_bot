@@ -4,7 +4,6 @@ import javax.persistence.*;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Objects;
-
 import static javax.persistence.GenerationType.AUTO;
 
 @Entity
