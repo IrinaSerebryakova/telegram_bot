@@ -26,15 +26,4 @@ public class TelegramBotApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(TelegramBotApplication.class, args);
 	}
-
-	@Scheduled(cron = "0 0/1 * * * *")
-	public void sendNotifications() {
-		Long chatId = 614749807L;
-		try {
-			listener.sendScheduledNotifications(LocalDateTime.now().truncatedTo(ChronoUnit.MINUTES));
-		} catch (Exception e) {
-			logger.error("Ошибка при отправке уведомлений", e);
-		}
-	}
-
 }
