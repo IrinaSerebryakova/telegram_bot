@@ -5,14 +5,16 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Objects;
 
+import static javax.persistence.GenerationType.AUTO;
 import static javax.persistence.GenerationType.IDENTITY;
 
 @Entity
 @Table(name = "notification_task")
 public class Notification {
 
-    public Notification() {
-    }
+    public Notification(){
+
+}
 
     @Id
     @GeneratedValue(strategy = IDENTITY)
